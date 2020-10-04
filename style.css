@@ -1,0 +1,1734 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: rgb(255, 250, 250);
+}
+
+#delicate {
+    color: rgb(211, 205, 205);
+    font-weight: 700;
+}
+
+.latest-suits {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 250px;
+}
+
+/* Navbar */
+.navbar {
+    font-size: 18px;
+    padding-bottom: 10px;
+    width: 80vw;
+    margin: 0 10vw;
+}
+
+.main-nav {
+    list-style: none;
+    display: none;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.main-nav a:hover,
+.logo:hover {
+    color: rgb(49, 49, 49);
+}
+
+.main-nav a:hover {
+    border-bottom: 2px solid;
+    border-bottom-color: rgba(85, 85, 85, 0.5);
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(14, 14, 14, 0.7);
+}
+
+.logo {
+    display: inline-block;
+    font-size: 24px;
+    margin-top: 10px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+/* Section 1 */
+.section-1 {
+    position: relative;
+}
+
+.section-1-container-image img {
+    width: 90%;
+    height: 85vh;
+    margin: 0 5%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(50%);
+}
+
+.section-1-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 15vh 30vw;
+    text-align: center;
+    height: 40vh;
+    align-items: center;
+    z-index: 2;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    top: 1%;
+}
+
+.section-1-text h1,
+.section-1-text h2,
+.section-1-text h3,
+.section-1-text button {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.section-1-text h1 {
+    color: rgb(255, 255, 255);
+    font-size: 6rem;
+    font-family: 'Times New Roman, Times, serif'
+}
+
+.section-1-text h2 {
+    padding-bottom: 10px;
+}
+
+.section-1-text h3 {
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.section-1-text button {
+    background: none;
+    padding: 10px 10px;
+    height: 50px;
+    width: 150px;
+    margin: 10px 20px;
+    outline: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 2;
+    font-weight: 700;
+}
+
+.section-1-text button:hover {
+    background-color: #fff;
+    color: #333;
+    outline: none;
+}
+
+/* Section 2 */
+.section-2-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.section-2-container img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+}
+
+.section-2-container h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: overline;
+}
+
+.section-2-container h4 {
+    color: #333;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section-2-container a {
+    max-width: 80%;
+    transition: all 0.3s ease;
+}
+
+.section-2-container a:hover {
+    transform: scale(1.01);
+}
+
+/* Section 3 */
+.section-3-container {
+    height: 80vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/section-3-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 5rem;
+}
+
+.section-3-text {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: rgb(143, 219, 255);
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.section-3-text h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.section-3-text h2 {
+    padding: 0 50px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.section-3-text button {
+    background: none;
+    color: rgb(143, 219, 255);
+    border: 1px solid rgb(143, 219, 255);
+    padding: 15px 45px;
+    margin-top: 1.5rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.section-3-text button:hover {
+    background: rgb(143, 219, 255);
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Section 4 */
+.section-4-container {
+    background-image: url(images/section-4-background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 80vw;
+    height: 60vh;
+    margin: 5rem 10vw;
+}
+
+.section-4-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 244, 244);
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    text-transform: uppercase;
+}
+
+.section-4-text h2 {
+    font-size: 4.3rem;
+}
+
+.section-4-text h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.section-4-text button {
+    background: none;
+    border: 2px solid rgb(255, 239, 239);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin-top: 3rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.section-4-text button:hover {
+    background: #333;
+    color: rgb(255, 239, 239);
+    transition: 0.2s;
+    border-color: #333;
+}
+
+/* Section 5 */
+.section-5-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 60%;
+    margin: 0 20%
+}
+
+.first-column,
+.second-column {
+    text-transform: uppercase;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.first-text,
+.second-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.first-text h2,
+.second-text h2 {
+    letter-spacing: 5px;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    color: rgb(100, 72, 72);
+}
+
+.first-text h4,
+.second-text h4 {
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.first-text button,
+.second-text button {
+    background: none;
+    border: 2px solid rgb(100, 72, 72);
+    color: rgb(100, 72, 72);
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 35px;
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+}
+
+.first-text button:hover,
+.second-text button:hover {
+    background: rgb(100, 72, 72);
+    color: #fff;
+    transition: 0.2s;
+}
+
+/* Section 6 */
+.section-6 {
+    display: none;
+}
+
+.section-6-container {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blogs button {
+    cursor: pointer;
+}
+
+/* Section 7 */
+.section-7-container {
+    width: 50%;
+    margin: 10% 25%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.section-7-container h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin-right: 40px;
+}
+
+.section-7-container i {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    color: #333;
+}
+
+.section-7-container i:hover {
+    transform: scale(1.1);
+    color: #222;
+    transition: 0.2s;
+}
+
+/* Discover more section 1 */
+.icon-container {
+    width: 90%;
+    height: 80vh;
+    margin: 0 5%;
+    background-image: url(images/section\ 1.jpg);
+    background-size: 100% cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.icon-container h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 7rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.icon-container h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.discover-container-1 {
+    text-align: center;
+    width: 60%;
+    margin: 20px 20%;
+}
+
+.discover-container-1 button {
+    margin-top: 20px;
+    background: none;
+    padding: 10px 40px;
+    border: 2px solid #333;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.discover-container-1 button:hover {
+    background: #333;
+    color: #fff;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* Discover more section 2 */
+.discover-section-2-grid-1 {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin: 0 35vw;
+    text-align: center;
+    align-items: center;
+}
+
+.icon-image-1 img {
+    object-fit: cover;
+    height: 85vh;
+    width: 70vw;
+    margin-bottom: 50px;
+}
+
+.icon-image-2 img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    object-fit: cover;
+    height: 60vh;
+    width: 60vw;
+}
+
+.discover-section-2-grid-1 h4,
+.discover-section-2-grid-1 h3 {
+    margin-top: 50px;
+    width: 60vw;
+    text-transform: uppercase;
+}
+
+.jackets-section-1 {
+    width: 90%;
+    margin: 10% 5%;
+    margin-bottom: 150px;
+}
+
+.jackets-section-1 h4 {
+    font-weight: lighter;
+}
+
+.jackets-section-1 h2, h4 {
+    text-align: center;
+}
+
+.jackets-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    margin: 0 7.5%;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 100px;
+    align-content: center;
+    grid-column-gap: 40px;
+}
+
+.jacket-1,
+.jacket-2,
+.jacket-3,
+.jacket-4,
+.jacket-5 {
+    text-align: center;
+}
+
+.jacket-1 h6,
+.jacket-2 h6,
+.jacket-3 h6,
+.jacket-4 h6,
+.jacket-5 h6 {
+    font-size: 1.05rem;
+    font-weight: lighter;
+}
+
+.jacket-1 {
+    background: url(images/jacket-1-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 450px;
+    cursor: pointer;
+}
+
+.jacket-1 h4 {
+    margin-top: 450px;
+}
+
+.jacket-1:hover {
+    background: url(images/jacket-1-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.jacket-2 {
+    background: url(images/jacket-2-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 450px;
+    cursor: pointer;
+}
+
+.jacket-2 h4 {
+    margin-top: 450px;
+}
+
+.jacket-2:hover {
+    background: url(images/jacket-2-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.jacket-3 {
+    background: url(images/jacket-3-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 450px;
+    cursor: pointer;
+}
+
+.jacket-3 h4 {
+    margin-top: 450px;
+}
+
+.jacket-3:hover {
+    background: url(images/jacket-3-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.jacket-4 {
+    background: url(images/jacket-4-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 450px;
+    cursor: pointer;
+}
+
+.jacket-4 h4 {
+    margin-top: 450px;
+}
+
+.jacket-4:hover {
+    background: url(images/jacket-4-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.jacket-5 {
+    background: url(images/jacket-5-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 450px;
+    cursor: pointer;
+}
+
+.jacket-5 h4 {
+    margin-top: 450px;
+}
+
+.jacket-5:hover {
+    background: url(images/jacket-5-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+/* Clothing & shoes */
+.clothing-shoes-section-1 h2,
+.clothing-shoes-section-1 h4 {
+    width: 90%;
+    margin: 1% 5%;
+    text-align: center;
+}
+
+.clothing-shoes-section-1 h4 {
+    font-weight: lighter;
+}
+
+.suit-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    margin: 0 7.5%;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 100px;
+    align-content: center;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+    text-align: center;
+}
+
+.item-1 h6,
+.item-2 h6,
+.item-3 h6,
+.item-4 h6 {
+    font-size: 1.05rem;
+    font-weight: lighter;
+}
+
+.item-1 {
+    background: url(images/item-1-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 350px;
+    cursor: pointer;
+}
+
+.item-1 h4 {
+    margin-top: 350px;
+}
+
+.item-1:hover {
+    background: url(images/item-1-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.item-2 {
+    background: url(images/item-2-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 350px;
+    cursor: pointer;
+}
+
+.item-2 h4 {
+    margin-top: 350px;
+}
+
+.item-2:hover {
+    background: url(images/item-2-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.item-3 {
+    background: url(images/item-3-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 350px;
+    cursor: pointer;
+}
+
+.item-3 h4 {
+    margin-top: 350px;
+}
+
+.item-3:hover {
+    background: url(images/item-3-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.item-4 {
+    background: url(images/item-4-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 350px;
+    cursor: pointer;
+}
+
+.item-4 h4 {
+    margin-top: 350px;
+}
+
+.item-4:hover {
+    background: url(images/item-4-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.item-4 h6,
+.item-3 h6 {
+    margin-bottom: 50px;
+}
+
+.clothing-shoes-section-2 {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.clothing-shoes-section-2 h4 {
+    font-weight: lighter;
+}
+
+.clothing-shoes-section-2 h2,
+.clothing-shoes-section-2 h4 {
+    width: 90%;
+    margin: 1% 5%;
+    text-align: center;
+}
+
+.shirt-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    margin: 0 7.5%;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 100px;
+    align-content: center;
+}
+
+.shirt-1,
+.shirt-2,
+.shirt-3,
+.shirt-4,
+.shirt-5 {
+    text-align: center;
+}
+
+.shirt-1 h6,
+.shirt-2 h6,
+.shirt-3 h6,
+.shirt-4 h6,
+.shirt-5 h6 {
+    font-size: 1.05rem;
+    font-weight: lighter;
+}
+
+.shirt-1 {
+    background: url(images/shirt-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.shirt-1 h4 {
+    margin-top: 350px;
+}
+
+.shirt-1:hover {
+    background: url(images/shirt-1-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.shirt-2 {
+    background: url(images/shirt-2-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.shirt-2 h4 {
+    margin-top: 350px;
+}
+
+.shirt-2:hover {
+    background: url(images/shirt-2-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.shirt-3 {
+    background: url(images/shirt-3-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.shirt-3 h4 {
+    margin-top: 350px;
+}
+
+.shirt-3:hover {
+    background: url(images/shirt-3-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.shirt-4 {
+    background: url(images/shirt-4-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.shirt-4 h4 {
+    margin-top: 350px;
+}
+
+.shirt-4:hover {
+    background: url(images/shirt-4-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.shirt-5 {
+    background: url(images/shirt-5-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.shirt-5 h4 {
+    margin-top: 350px;
+}
+
+.shirt-5:hover {
+    background: url(images/shirt-5-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.clothing-shoes-section-3 {
+    margin-top: 200px;
+}
+
+.clothing-shoes-section-3 h2,
+.clothing-shoes-section-3 h4 {
+    width: 90%;
+    margin: 1% 5%;
+    text-align: center;
+}
+
+.clothing-shoes-section-3 h4 {
+    font-weight: lighter;
+}
+
+.shoes-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    margin: 0 7.5%;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 100px;
+    align-content: center;
+}
+
+.shoe-1,
+.shoe-2,
+.shoe-3,
+.shoe-4 {
+    text-align: center;
+}
+
+.shoe-1 h6,
+.shoe-2 h6,
+.shoe-3 h6,
+.shoe-4 h6 {
+    font-size: 1.05rem;
+    font-weight: lighter;
+}
+
+.shoe-1 {
+    background: url(images/shoe-1-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.shoe-1 h4 {
+    margin-top: 350px;
+}
+
+.shoe-1:hover {
+    background: url(images/shoe-1-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.shoe-2 {
+    background: url(images/shoe-2-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.shoe-2 h4 {
+    margin-top: 350px;
+}
+
+.shoe-2:hover {
+    background: url(images/shoe-2-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.shoe-3 {
+    background: url(images/shoe-3-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.shoe-3 h4 {
+    margin-top: 350px;
+}
+
+.shoe-3:hover {
+    background: url(images/shoe-3-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+/* Bags & accessories */
+.bags-accessories-section-1 {
+    width: 90%;
+    margin: 1% 5%;
+    margin-bottom: 150px;
+}
+
+.bags-accessories-section-1 h4,
+.bags-accessories-section-2 h4,
+.bags-accessories-section-3 h4 {
+    font-weight: lighter;
+}
+
+.bags-accessories-section-1 h2, h4 {
+    text-align: center;
+}
+
+.bag-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    margin: 0 7.5%;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 100px;
+    align-content: center;
+}
+
+.bag-1,
+.bag-2,
+.bag-3,
+.bag-4,
+.bag-5 {
+    text-align: center;
+}
+
+.bag-1 h6,
+.bag-2 h6,
+.bag-3 h6,
+.bag-4 h6,
+.bag-5 h6 {
+    font-size: 1.05rem;
+    font-weight: lighter;
+}
+
+.bag-1 {
+    background: url(images/bag-1-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 350px;
+    cursor: pointer;
+}
+
+.bag-1 h4 {
+    margin-top: 350px;
+}
+
+.bag-1:hover {
+    background: url(images/bag-1-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.bag-2 {
+    background: url(images/bag-2-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 350px;
+    cursor: pointer;
+    grid-column-start: 2;
+}
+
+.bag-2 h4 {
+    margin-top: 350px;
+}
+
+.bag-2:hover {
+    background: url(images/bag-2-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.bag-3 {
+    background: url(images/bag-3-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 350px;
+    cursor: pointer;
+}
+
+.bag-3 h4 {
+    margin-top: 350px;
+}
+
+.bag-3:hover {
+    background: url(imgs/bag-3-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.bag-4 {
+    background: url(images/bag-4-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 350px;
+    cursor: pointer;
+    grid-column-start: 2;
+}
+
+.bag-4 h4 {
+    margin-top: 350px;
+}
+
+.bag-4:hover {
+    background: url(images/bag-4-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.bag-5 {
+    background: url(images/bag-5-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 350px;
+    cursor: pointer;
+}
+
+.bag-5 h4 {
+    margin-top: 350px;
+}
+
+.bag-5:hover {
+    background: url(images/bag-5-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.bags-accessories-section-2 {
+    width: 90%;
+    margin: 10% 5%;
+    margin-bottom: 150px;
+}
+
+.bags-accessories-section-2 h2, h4 {
+    text-align: center;
+}
+
+.scarf-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    margin: 0 7.5%;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 100px;
+    align-content: center;
+    grid-column-gap: 40px;
+}
+
+.scarf-1,
+.scarf-2,
+.scarf-3,
+.scarf-4 {
+    text-align: center;
+}
+
+.scarf-1 h6,
+.scarf-2 h6,
+.scarf-3 h6,
+.scarf-4 h6 {
+    font-size: 1.05rem;
+    font-weight: lighter;
+}
+
+.scarf-1 {
+    background: url(images/scarf-1-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.scarf-1 h4 {
+    margin-top: 350px;
+}
+
+.scarf-1:hover {
+    background: url(images//scarf-1-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.scarf-2 {
+    background: url(images/scarf-2-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.scarf-2 h4 {
+    margin-top: 350px;
+}
+
+.scarf-2:hover {
+    background: url(images//scarf-2-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.scarf-3 {
+    background: url(images/scarf-3-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.scarf-3 h4 {
+    margin-top: 350px;
+}
+
+.scarf-3:hover {
+    background: url(images//scarf-3-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.scarf-4 {
+    background: url(images/scarf-4-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.scarf-4 h4 {
+    margin-top: 350px;
+}
+
+.scarf-4:hover {
+    background: url(images//scarf-4-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+}
+
+.bags-accessories-section-3 {
+    width: 90%;
+    margin: 10% 5%;
+    margin-bottom: 150px;
+}
+
+.bags-accessories-section-3 h2, h4 {
+    text-align: center;
+}
+
+.glove-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    margin: 0 7.5%;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 100px;
+    align-content: center;
+    grid-column-gap: 40px;
+}
+
+.glove-1,
+.glove-2,
+.glove-3 {
+    text-align: center;
+}
+
+.glove-1 h6,
+.glove-2 h6,
+.glove-3 h6 {
+    font-size: 1.05rem;
+    font-weight: lighter;
+}
+
+.glove-1 {
+    background: url(images/glove-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.glove-1 h4 {
+    margin-top: 350px;
+}
+
+.glove-2 {
+    background: url(images/glove-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.glove-2 h4 {
+    margin-top: 350px;
+}
+
+.glove-3 {
+    background: url(images/glove-3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 350px;
+    cursor: pointer;
+}
+
+.glove-3 h4 {
+    margin-top: 350px;
+}
+
+/* Media queries */
+@media screen and (min-width: 992px) {
+    /* Navigation bar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0px;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .section-1-text h1 {
+        font-size: 10rem;
+        letter-spacing: 2rem;
+    }
+
+    .section-2-container {
+        display: grid;
+        width: 85vw;
+        margin: 0 7.5vw;
+        grid-template-columns: 30% 30% 30%;
+        padding: 0;
+        text-align: center;
+        grid-column-gap: 50px;
+    }
+
+    #suits {
+        grid-row-start: 2;
+        grid-column-end: 2;
+    }
+
+    #accessories {
+        grid-row-start: 2;
+        grid-column-end: 3;
+    }
+
+    .section-2-container img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .section-2-container a {
+        max-width: 100%;
+    }
+
+    .section-3-container {
+        height: 60vh;
+    }
+
+    .section-3-text h3 {
+        font-size: 2rem;
+    }
+
+    .section-3-text h2 {
+        font-size: 3rem;
+    }
+
+    .section-5-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin: 0 10%;
+        grid-column-gap: 50px;
+        text-align: center;
+    }
+
+    .first-column {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .second-column {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .section-5-container img {
+        width: 80%;
+        text-align: center;
+        margin: 0 10%;
+    }
+
+    .first-text button,
+    .second-text button {
+    font-size: initial;
+    padding: 8px 15px;
+    }
+
+    .section-6 {
+        display: initial;
+    }
+
+    .first-blog,
+    .second-blog {
+        margin-bottom: 100px;
+        margin-top: 30px;
+        max-height: 100%;
+        height: 20vw;
+        width: auto;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        width: 50vw;
+        margin: 0 25vw;
+    }
+
+    .first-blog {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-image: url(images/section-6-image-1.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .second-blog {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-image: url(images/section-6-image-2.jpg);
+        background-size: cover;
+    }
+
+    .first-blog p,
+    .second-blog p {
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+        padding-top: 70px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .first-blog p {
+        color: rgb(250, 214, 255);
+    }
+
+    .second-blog p {
+        color: rgb(235, 255, 58);
+        font-weight: 700;
+    }
+
+    .first-blog button,
+    .second-blog button {
+        margin-top: 20px;
+        outline: none;
+        color: #fff;
+        font-weight: 700;
+        background: none;
+        padding: 10px 20px;
+        text-transform: uppercase;
+    }
+
+    .first-blog button {
+        border: 2px solid rgb(250, 214, 255);
+        color: rgb(250, 214, 255);
+    }
+
+    .first-blog button:hover {
+        background: rgb(250, 214, 255);
+        color: #333;
+        transition: 0.2s;
+    }
+
+    .second-blog button {
+        border: 2px solid rgb(235, 255, 58);
+        color: rgb(235, 255, 58);
+    }
+
+    .second-blog button:hover {
+        background: rgb(235, 255, 58);
+        color: #333;
+        transition: 0.2s;
+    }
+
+    .discover-section-2-grid-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        width: 90vw;
+        margin: 0 4vw;
+        position: relative;
+    }
+
+    .icon-image-1 img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 100%;
+    }
+
+    .icon-image-2 img {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 100%;
+    }
+
+    .discover-section-2-grid-1 h4 {
+        width: 100%;
+        position: absolute;
+        top: 80%;
+        display: none;
+    }
+
+    .clothing-shoes-section-1 h2,
+    .clothing-shoes-section-1 h4 {
+        width: 65%;
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+    }
+
+    .suit-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    .item-4 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+    }
+
+    .clothing-shoes-section-2 h2,
+    .clothing-shoes-section-2 h4 {
+        width: 65%;
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+    }
+
+    .shoes-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    .shirt-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    .clothing-shoes-section-3 h2,
+    .clothing-shoes-section-3 h4 {
+        width: 65%;
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+    }
+
+    .bags-accessories-section-1 h2, h4 {
+        width: 65%;
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+    }
+
+    .bag-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    .bag-3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .bag-4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .bag-5 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .bags-accessories-section-2 h2, h4 {
+        width: 65%;
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+    }
+
+    .scarf-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    .bags-accessories-section-3 h2, h4 {
+        width: 65%;
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+    }
+
+    .glove-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    .jackets-section-1 h2, h4 {
+        width: 65%;
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+    }
+
+    .jackets-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60%;
+        margin: 0 20%;
+    }
+}
